@@ -7,7 +7,7 @@ function App() {
   const [isNumber,setNumber] = useState(false)
   const [isSpecialChar,setSpeclalChar] = useState(false)
 
-  const passwordRef = useRef(null)
+  const passwordRef = useRef<HTMLInputElement>(null)
 
   const passGen = useCallback(()=>{
     let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
